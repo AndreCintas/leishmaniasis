@@ -1,0 +1,50 @@
+Início
+    Importar bibliotecas necessárias
+    Abrir arquivo de saída para registrar informações
+
+    Obter informações do sistema e tempo atual
+    Imprimir informações no arquivo de saída
+
+    Função read_data(xlsx, sheet):
+        Ler dados de Excel
+        Converter coluna de mês para datetime
+        Definir coluna de mês como índice
+        Preencher valores faltantes
+        Criar colunas de defasagem (lag1, lag2, lag3)
+        Retornar DataFrame
+
+    Ler dados para a cidade "fortaleza"
+    Remover colunas desnecessárias
+    Dividir dados em treino e teste
+    Normalizar dados
+
+    Função ann1(optimizer, activation, neurons):
+        Criar modelo ANN
+        Compilar modelo
+        Retornar modelo ANN
+
+    Função lstm1(optimizer, activation, neurons):
+        Criar modelo LSTM
+        Compilar modelo
+        Retornar modelo LSTM
+
+    Definir parâmetros para GridSearchCV para ANN e SVM
+
+    Para cada combinação de colunas:
+        Criar e treinar o modelo ANN usando GridSearchCV
+        Avaliar o modelo ANN e registrar métricas
+
+    Para cada combinação de colunas:
+        Criar e treinar o modelo LSTM usando GridSearchCV
+        Avaliar o modelo LSTM e registrar métricas
+
+    Para cada combinação de colunas:
+        Criar e treinar o modelo SVM usando GridSearchCV
+        Avaliar o modelo SVM e registrar métricas
+
+    Encontrar melhores modelos baseados em RMSE, MSE, MAE
+
+    Imprimir resultados dos melhores modelos para ANN, LSTM e SVM no arquivo de saída
+
+    Fechar o arquivo de saída
+Fim
